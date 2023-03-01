@@ -10,7 +10,7 @@ const app = express()
 const route = Router();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-const port = 8080
+const port = process.env.PORT || 8081
 
 app.use(
     cors({
